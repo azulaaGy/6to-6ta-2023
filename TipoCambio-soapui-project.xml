@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b2fe83ef-31fc-4ae4-a3d6-20d1d381ac21" activeEnvironment="Default" name="TipoCambio" resourceRoot="" soapui-version="5.7.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="8b59f0d0-5f89-4e71-86db-050038a5d6d5" wsaVersion="NONE" name="TipoCambioSoap12" type="wsdl" bindingName="{http://www.banguat.gob.gt/variables/ws/}TipoCambioSoap12" soapVersion="1_2" anonymous="optional" definition="https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint></con:endpoints><con:operation id="e7a4dd9f-1b8e-40b5-b01e-72b0b693b384" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioDia" name="TipoCambioDia" bindingOperationName="TipoCambioDia" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e7b021b8-3055-4c3b-a144-16ba68b48fa8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:TipoCambioDia/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioSoap/TipoCambioDiaRequest"/></con:call></con:operation><con:operation id="63e8b3df-e6fd-4277-91d6-b444e46d7ff3" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioDiaString" name="TipoCambioDiaString" bindingOperationName="TipoCambioDiaString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9dab1604-45c3-4b4b-9aae-8e025d49f678" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:TipoCambioDiaString/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioSoap/TipoCambioDiaStringRequest"/></con:call></con:operation><con:operation id="cf72c914-65dc-47da-8cdb-47770d6ebb70" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicial" name="TipoCambioFechaInicial" bindingOperationName="TipoCambioFechaInicial" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6fa6296b-c8ee-40c9-a6fa-dee941978383" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:TipoCambioFechaInicial>\r
+         <!--Optional:-->\r
+         <ws:fechainit>07 Nov 2023</ws:fechainit>\r
+      </ws:TipoCambioFechaInicial>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioSoap/TipoCambioFechaInicialRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="93edad1f-c57d-470f-a676-2d2df1ba03a0" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicialMoneda" name="TipoCambioFechaInicialMoneda" bindingOperationName="TipoCambioFechaInicialMoneda" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="70bcba45-9936-46eb-a3be-9ba55c4c7dbd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:TipoCambioFechaInicialMoneda>\r
+         <!--Optional:-->\r
+         <ws:fechainit>?</ws:fechainit>\r
+         <ws:moneda>?</ws:moneda>\r
+      </ws:TipoCambioFechaInicialMoneda>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioSoap/TipoCambioFechaInicialMonedaRequest"/></con:call></con:operation><con:operation id="a2d4f10d-3f7b-4e82-8463-7d3d7377612b" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioRango" name="TipoCambioRango" bindingOperationName="TipoCambioRango" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f62cfa82-b4f3-4aa7-8bfa-7588df48781a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:TipoCambioRango>\r
+         <!--Optional:-->\r
+         <ws:fechainit>?</ws:fechainit>\r
+         <!--Optional:-->\r
+         <ws:fechafin>?</ws:fechafin>\r
+      </ws:TipoCambioRango>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioSoap/TipoCambioRangoRequest"/></con:call></con:operation><con:operation id="e4977c35-37fd-4c97-8fea-a47bb91c027e" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioRangoMoneda" name="TipoCambioRangoMoneda" bindingOperationName="TipoCambioRangoMoneda" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b6941242-9b66-4b7a-8941-9ed5858e73f2" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:TipoCambioRangoMoneda>\r
+         <!--Optional:-->\r
+         <ws:fechainit>?</ws:fechainit>\r
+         <!--Optional:-->\r
+         <ws:fechafin>?</ws:fechafin>\r
+         <ws:moneda>?</ws:moneda>\r
+      </ws:TipoCambioRangoMoneda>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioSoap/TipoCambioRangoMonedaRequest"/></con:call></con:operation><con:operation id="e26b1c98-a46b-47c5-80a9-009dd12215d8" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/Variables" name="Variables" bindingOperationName="Variables" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="02378a37-30ab-44cb-ae01-c3aef7b26b62" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:Variables>\r
+         <ws:variable>?</ws:variable>\r
+      </ws:Variables>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioSoap/VariablesRequest"/></con:call></con:operation><con:operation id="7cb13e3c-b4d9-4449-998f-09b50af696b4" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/VariablesDisponibles" name="VariablesDisponibles" bindingOperationName="VariablesDisponibles" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="61071799-6dba-4be2-9d24-7e08d919c9be" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:VariablesDisponibles/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioSoap/VariablesDisponiblesRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="f87cb20f-80b4-4476-95a0-646984739e86" wsaVersion="NONE" name="TipoCambioSoap" type="wsdl" bindingName="{http://www.banguat.gob.gt/variables/ws/}TipoCambioSoap" soapVersion="1_1" anonymous="optional" definition="https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx?WSDL"><con:part><con:url>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.banguat.gob.gt/variables/ws/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.banguat.gob.gt/variables/ws/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Tipo de cambio en moneda extranjera</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.banguat.gob.gt/variables/ws/">
+      <s:element name="VariablesDisponibles">
+        <s:complexType/>
+      </s:element>
+      <s:element name="VariablesDisponiblesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VariablesDisponiblesResult" type="tns:InfoVariable"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="InfoVariable">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Variables" type="tns:ArrayOfVariable"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CambioDia" type="tns:ArrayOfVar"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CambioDolar" type="tns:ArrayOfVarDolar"/>
+          <s:element minOccurs="1" maxOccurs="1" name="TotalItems" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfVariable">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Variable" nillable="true" type="tns:Variable"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Variable">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="moneda" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfVar">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Var" nillable="true" type="tns:Var"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Var">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="moneda" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="fecha" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="venta" type="s:float"/>
+          <s:element minOccurs="1" maxOccurs="1" name="compra" type="s:float"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfVarDolar">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VarDolar" nillable="true" type="tns:VarDolar"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VarDolar">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="fecha" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="referencia" type="s:float"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Variables">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="variable" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VariablesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VariablesResult" type="tns:InfoVariable"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioFechaInicial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechainit" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioFechaInicialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoCambioFechaInicialResult" type="tns:DataVariable"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DataVariable">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Vars" type="tns:ArrayOfVar"/>
+          <s:element minOccurs="1" maxOccurs="1" name="TotalItems" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TipoCambioRango">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechainit" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="fechafin" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioRangoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoCambioRangoResult" type="tns:DataVariable"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioFechaInicialMoneda">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechainit" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="moneda" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioFechaInicialMonedaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoCambioFechaInicialMonedaResult" type="tns:DataVariable"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioRangoMoneda">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechainit" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="fechafin" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="moneda" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioRangoMonedaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoCambioRangoMonedaResult" type="tns:DataVariable"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioDia">
+        <s:complexType/>
+      </s:element>
+      <s:element name="TipoCambioDiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoCambioDiaResult" type="tns:InfoVariable"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TipoCambioDiaString">
+        <s:complexType/>
+      </s:element>
+      <s:element name="TipoCambioDiaStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoCambioDiaStringResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VariablesDisponiblesSoapIn">
+    <wsdl:part name="parameters" element="tns:VariablesDisponibles"/>
+  </wsdl:message>
+  <wsdl:message name="VariablesDisponiblesSoapOut">
+    <wsdl:part name="parameters" element="tns:VariablesDisponiblesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="VariablesSoapIn">
+    <wsdl:part name="parameters" element="tns:Variables"/>
+  </wsdl:message>
+  <wsdl:message name="VariablesSoapOut">
+    <wsdl:part name="parameters" element="tns:VariablesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioFechaInicialSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoCambioFechaInicial"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioFechaInicialSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoCambioFechaInicialResponse"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioRangoSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoCambioRango"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioRangoSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoCambioRangoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioFechaInicialMonedaSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoCambioFechaInicialMoneda"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioFechaInicialMonedaSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoCambioFechaInicialMonedaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioRangoMonedaSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoCambioRangoMoneda"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioRangoMonedaSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoCambioRangoMonedaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioDiaSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoCambioDia"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioDiaSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoCambioDiaResponse"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioDiaStringSoapIn">
+    <wsdl:part name="parameters" element="tns:TipoCambioDiaString"/>
+  </wsdl:message>
+  <wsdl:message name="TipoCambioDiaStringSoapOut">
+    <wsdl:part name="parameters" element="tns:TipoCambioDiaStringResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="TipoCambioSoap">
+    <wsdl:operation name="VariablesDisponibles">
+      <wsdl:documentation>Despliega las variables (con relación a la moneda) disponibles para consulta.</wsdl:documentation>
+      <wsdl:input message="tns:VariablesDisponiblesSoapIn"/>
+      <wsdl:output message="tns:VariablesDisponiblesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Variables">
+      <wsdl:documentation>Despliega el tipo de cambio correspondiente a una variable (moneda) dada. (Formato: moneda=2)</wsdl:documentation>
+      <wsdl:input message="tns:VariablesSoapIn"/>
+      <wsdl:output message="tns:VariablesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioFechaInicial">
+      <wsdl:documentation>Despliega la información del tipo de cambio, en dólares, desde una fecha dada hasta el día corriente. (Formato: fecha_ini=dd/mm/aaaa).</wsdl:documentation>
+      <wsdl:input message="tns:TipoCambioFechaInicialSoapIn"/>
+      <wsdl:output message="tns:TipoCambioFechaInicialSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioRango">
+      <wsdl:documentation>Despliega la información para dólares en el período de tiempo dado. (Formato: fecha_ini=dd/mm/aaaa fecha_fin=dd/mm/aaaa)</wsdl:documentation>
+      <wsdl:input message="tns:TipoCambioRangoSoapIn"/>
+      <wsdl:output message="tns:TipoCambioRangoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioFechaInicialMoneda">
+      <wsdl:documentation>Despliega la información para la variable indicada a partir de una fecha y moneda indicada. (Formato: fecha_ini=dd/mm/aaaa moneda=02).</wsdl:documentation>
+      <wsdl:input message="tns:TipoCambioFechaInicialMonedaSoapIn"/>
+      <wsdl:output message="tns:TipoCambioFechaInicialMonedaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioRangoMoneda">
+      <wsdl:documentation>Despliega la información para la variable indicada en el período de tiempo y la moneda dada. (Formato: fecha_ini=dd/mm/aaaa fecha_fin=dd/mm/aaaa moneda=02)</wsdl:documentation>
+      <wsdl:input message="tns:TipoCambioRangoMonedaSoapIn"/>
+      <wsdl:output message="tns:TipoCambioRangoMonedaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioDia">
+      <wsdl:documentation>Devuelve el cambio del día en dólares</wsdl:documentation>
+      <wsdl:input message="tns:TipoCambioDiaSoapIn"/>
+      <wsdl:output message="tns:TipoCambioDiaSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioDiaString">
+      <wsdl:documentation>Devuelve el cambio del día en dólares</wsdl:documentation>
+      <wsdl:input message="tns:TipoCambioDiaStringSoapIn"/>
+      <wsdl:output message="tns:TipoCambioDiaStringSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TipoCambioSoap" type="tns:TipoCambioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="VariablesDisponibles">
+      <soap:operation soapAction="http://www.banguat.gob.gt/variables/ws/VariablesDisponibles" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Variables">
+      <soap:operation soapAction="http://www.banguat.gob.gt/variables/ws/Variables" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioFechaInicial">
+      <soap:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicial" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioRango">
+      <soap:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioRango" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioFechaInicialMoneda">
+      <soap:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicialMoneda" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioRangoMoneda">
+      <soap:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioRangoMoneda" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioDia">
+      <soap:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioDia" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioDiaString">
+      <soap:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioDiaString" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TipoCambioSoap12" type="tns:TipoCambioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="VariablesDisponibles">
+      <soap12:operation soapAction="http://www.banguat.gob.gt/variables/ws/VariablesDisponibles" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Variables">
+      <soap12:operation soapAction="http://www.banguat.gob.gt/variables/ws/Variables" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioFechaInicial">
+      <soap12:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicial" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioRango">
+      <soap12:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioRango" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioFechaInicialMoneda">
+      <soap12:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicialMoneda" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioRangoMoneda">
+      <soap12:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioRangoMoneda" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioDia">
+      <soap12:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioDia" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TipoCambioDiaString">
+      <soap12:operation soapAction="http://www.banguat.gob.gt/variables/ws/TipoCambioDiaString" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TipoCambio">
+    <wsdl:documentation>Tipo de cambio en moneda extranjera</wsdl:documentation>
+    <wsdl:port name="TipoCambioSoap" binding="tns:TipoCambioSoap">
+      <soap:address location="https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="TipoCambioSoap12" binding="tns:TipoCambioSoap12">
+      <soap12:address location="https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint></con:endpoints><con:operation id="eea4ba10-99c3-44d5-8124-fe4f7645af69" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioDia" name="TipoCambioDia" bindingOperationName="TipoCambioDia" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="acc4eec6-35b6-41e2-8af5-9204514e9d57" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:TipoCambioDia/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioDia"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3929215e-6b3a-47f8-8b49-7320722465c2" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioDiaString" name="TipoCambioDiaString" bindingOperationName="TipoCambioDiaString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f5e0f238-e6e8-4245-8836-f98919db0762" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:TipoCambioDiaString/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioDiaString"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="6fc2bdbf-aa0a-47e3-8017-6294ede41464" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicial" name="TipoCambioFechaInicial" bindingOperationName="TipoCambioFechaInicial" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c2c70e9f-b099-491e-830e-e608bc79e52b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:TipoCambioFechaInicial>\r
+         <!--Optional:-->\r
+         <ws:fechainit>?</ws:fechainit>\r
+      </ws:TipoCambioFechaInicial>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicial"/></con:call></con:operation><con:operation id="0ccf8ae4-ad9c-40c5-aa47-61741e475e6b" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicialMoneda" name="TipoCambioFechaInicialMoneda" bindingOperationName="TipoCambioFechaInicialMoneda" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="72c6e5a5-0162-4b5e-9f88-2236c98c71ef" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:TipoCambioFechaInicialMoneda>\r
+         <!--Optional:-->\r
+         <ws:fechainit>?</ws:fechainit>\r
+         <ws:moneda>?</ws:moneda>\r
+      </ws:TipoCambioFechaInicialMoneda>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioFechaInicialMoneda"/></con:call></con:operation><con:operation id="812fe7a1-2eca-40b5-bdf8-d89f8d739622" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioRango" name="TipoCambioRango" bindingOperationName="TipoCambioRango" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cd0388d2-dbdc-4760-b822-5f1522ba664a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:TipoCambioRango>\r
+         <!--Optional:-->\r
+         <ws:fechainit>?</ws:fechainit>\r
+         <!--Optional:-->\r
+         <ws:fechafin>?</ws:fechafin>\r
+      </ws:TipoCambioRango>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioRango"/></con:call></con:operation><con:operation id="c5efc651-22e6-4a07-8787-acb8c74e0a9f" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/TipoCambioRangoMoneda" name="TipoCambioRangoMoneda" bindingOperationName="TipoCambioRangoMoneda" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="58adbac1-b06d-4d5e-be22-128d5c40afde" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:TipoCambioRangoMoneda>\r
+         <!--Optional:-->\r
+         <ws:fechainit>?</ws:fechainit>\r
+         <!--Optional:-->\r
+         <ws:fechafin>?</ws:fechafin>\r
+         <ws:moneda>?</ws:moneda>\r
+      </ws:TipoCambioRangoMoneda>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/TipoCambioRangoMoneda"/></con:call></con:operation><con:operation id="21cbd146-254d-46f1-a18f-d0aeb89ee9ca" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/Variables" name="Variables" bindingOperationName="Variables" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cbccd8eb-baa7-4255-968e-0a81798807e4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:Variables>\r
+         <ws:variable>?</ws:variable>\r
+      </ws:Variables>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/Variables"/></con:call></con:operation><con:operation id="e7562a91-a1d1-4a71-b82d-394abfd63f1a" isOneWay="false" action="http://www.banguat.gob.gt/variables/ws/VariablesDisponibles" name="VariablesDisponibles" bindingOperationName="VariablesDisponibles" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ef9909e3-aae4-4720-9485-185bab2fbfbf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://www.banguat.gob.gt/variables/ws/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:VariablesDisponibles/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.banguat.gob.gt/variables/ws/VariablesDisponibles"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
